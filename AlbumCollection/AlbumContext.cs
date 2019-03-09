@@ -6,6 +6,7 @@ namespace AlbumCollection
     public class AlbumContext : DbContext
     {
         public DbSet<Album> Albums { get; set; }
+        public DbSet<Song> Songs { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
