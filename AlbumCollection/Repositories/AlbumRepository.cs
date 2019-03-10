@@ -15,7 +15,7 @@ namespace AlbumCollection.Repositories
 
         public Album GetByID(int id)
         {
-            return db.Albums.Single(album => album.Id == id);
+            return db.Albums.Single(album => album.AlbumId == id);
         }
 
         public IEnumerable<Album> GetAll()

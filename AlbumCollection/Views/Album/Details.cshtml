@@ -1,0 +1,35 @@
+﻿@model AlbumCollection.Models.Album
+
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Album Details</title>
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="/Album">Home</a></li>
+        </ul>
+    </nav>
+    <h2>@Model.Title</h2>
+    <p>Artist: @Model.Artist</p>
+    <p>Release Year: @Model.ReleaseYear</p>
+
+    <h2>Album Information</h2>
+    @foreach (var song in Model.Songs)
+    {
+        <p>@song.SongName</p>
+        <p>@song.SongId</p>
+      
+
+     }
+    <a href="/Song/Create/@Model.AlbumId" />Add a Song to the Album>
+</body>
+</html>

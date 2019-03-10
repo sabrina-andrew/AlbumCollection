@@ -32,7 +32,7 @@ namespace AlbumCollection.Controllers
         {
             var newSong = new Song()
             {
-                Id = id
+                AlbumId = id
             };
 
             return View(newSong);
@@ -42,7 +42,7 @@ namespace AlbumCollection.Controllers
         public ActionResult Create(Song song)
         {
             songRepo.Create(song);
-            return RedirectToAction("../Album/Details/" + song.Id);
+            return RedirectToAction("../Album/Details/" + song.AlbumId, "Album");
         }
     }
 }
