@@ -12,5 +12,7 @@ namespace AlbumCollection.Controllers
         {
             return View();
         }
+
+
     }
 }

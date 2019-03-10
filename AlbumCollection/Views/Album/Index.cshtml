@@ -1,0 +1,25 @@
+﻿@model IEnumerable<AlbumCollection.Models.Album>
+
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Albums</title>
+</head>
+<body>
+   
+        @foreach (var album in Model)
+        {
+            <li>
+                <a href="/Album/Details/@album.AlbumId">@album.Title</a>
+            </li>
+        }
+    </ul>
+</body>
+</html>
