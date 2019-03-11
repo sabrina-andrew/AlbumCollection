@@ -45,8 +45,7 @@ namespace AlbumCollection
                     Artist = "Megadeth",
                     ReleaseYear = 1994,
                     Title = "Youthanasia"
-                }
-                );
+                });
 
 
             modelBuilder.Entity<Song>().HasData(

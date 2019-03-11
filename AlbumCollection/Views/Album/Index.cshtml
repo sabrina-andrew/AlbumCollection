@@ -10,16 +10,25 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/Styles/AlbumIndex.css" />
+    
     <title>Albums</title>
 </head>
 <body>
-   
-        @foreach (var album in Model)
-        {
-            <li>
-                <a href="/Album/Details/@album.AlbumId">@album.Title</a>
-            </li>
-        }
-    </ul>
+    <div class="all-page-content">
+     <h1>Musica</h1>
+    <div class="all-albums">
+        <ul>
+            @foreach (var album in Model)
+            {
+                <li>
+                    <div class="album">
+                        <a href="/Album/Details/@album.AlbumId">@album.Title</a>
+                    </div>
+                </li>
+            }
+        </ul>
+    </div>
+    </div>
 </body>
 </html>
