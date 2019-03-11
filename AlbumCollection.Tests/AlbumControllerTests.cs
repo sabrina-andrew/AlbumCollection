@@ -47,7 +47,8 @@ namespace AlbumCollection.Tests
             var model = (IEnumerable<Album>)result.Model;
             Assert.Equal(expectedModel, model);
         }
-        //[Fact]
+        //Can't get this to pass
+        //[Fact]  
         //public void Details_Model_Is_Expected_Model()
         //{
         //    var expectedId = 5;
